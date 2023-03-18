@@ -1,0 +1,122 @@
+body{
+    border: 0;
+    margin: 0;
+    padding-bottom: 3rem;
+    background-color: #E8E2E2;
+    font-family: 'Poppins', sans-serif;;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    gap:2rem;
+    align-items: center;
+}   
+
+
+.cat-title{
+    height: 150px;
+    width: 110%;
+    display: flex;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: palegoldenrod;
+}
+
+.cat-area{
+    background-color: #F5F5F5;
+    height: 500px;
+    width: 1000px;
+    border-radius:2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1.5rem;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.cat-img{
+    height:inherit;
+    object-fit: fill;
+    border-radius: 2vw;
+}
+.cat-info{
+    display: flex;
+    flex-direction: column;
+    font-size:0.8rem;
+    font-weight: 300;
+    color: grey;
+    gap:2rem;
+}
+.cat-name{
+    padding: 4rem 0 0 0 ;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.property-name{
+    font-size:1.4em;
+    font-weight: 400;
+    color: black;
+    padding-right: 1rem;
+}
+
+.class-generator-button{
+    border-radius: 100vw;
+    line-height: 1;
+    background-color: aliceblue;
+    border-color: black;
+    color: cornflowerblue;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+.class-generator-button:hover{
+    background-color: cornflowerblue;
+    border-color: black;
+    color: aliceblue;
+}
+
+@media (max-width:1000px){
+    body{
+        justify-content: center;
+        align-items: center;
+        gap:0rem;
+    }
+    .cat-area{  
+        height: max-content;
+        width: 400px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        gap:1rem;
+        padding-bottom: 2rem;
+    }
+    .cat-img{
+        height:40vh;
+        width: 400px;
+        object-fit: fill;
+        border-radius: 2vw;
+    }
+    .cat-info{
+        font-size: 0.7rem;
+    }
+    .cat-name{
+        text-align: center;
+        padding:1rem 0 0 0 ;
+    }
+    .property{
+        padding: 0 3rem ;
+    }
+    .cat-title{
+        font-size: 2rem;
+        background-color: #E8E2E2;
+    }
+    .cat-area{
+        margin-bottom: 2rem;
+    }
+}
+.cat-area{
+    display: none;
+}
+footer{
+    color: grey;
+}
